@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="calculator.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+</head>
+
+<body>
+
+<form name="form1" class="calc" action="calculator.html" method="post">
+<input type="text" name="input" id="display">
+<br></br>
+<input type="button" class="C" value="C" onclick="form1.input.value=''">
+<input type="button" class="button" value="<-" onclick="form1.input.value=form.input.value.substring(0,form.input.value.length*1-1)"">
+<input type="button" class="operator" value="/" onclick="form1.input.value+='/'">
+<br></br>
+<input type="button" class="button" value="7" onclick="form1.input.value+='7'">
+<input type="button" class="button" value="8" onclick="form1.input.value+='8'">
+<input type="button" class="button" value="9" onclick="form1.input.value+='9'">
+<input type="button" class="operator" value="*" onclick="form1.input.value+='*'">
+<br></br>
+<input type="button" class="button" value="4" onclick="form1.input.value+='4'">
+<input type="button" class="button" value="5" onclick="form1.input.value+='5'">
+<input type="button" class="button" value="6" onclick="form1.input.value+='6'">
+<input type="button" class="operator" value="-" onclick="form1.input.value+='-'">
+<br></br>
+<input type="button" class="button" value="1" onclick="form1.input.value+='1'">
+<input type="button" class="button" value="2" onclick="form1.input.value+='2'">
+<input type="button" class="button" value="3" onclick="form1.input.value+='3'">
+<input type="button" class="operator" value="+" onclick="form1.input.value+='+'">
+<br></br>
+<input type="button" class="zero" value="0" onclick="form1.input.value+='0'">
+<input type="button" class="button" value="." onclick="form1.input.value+='.'">
+<input type="button" class="operator" value="=" onclick="form1.input.value=eval(form1.input.value)">
+
+
+
+</form>
+
+
+</body>
+</html>
